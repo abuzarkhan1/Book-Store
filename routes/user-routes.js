@@ -11,12 +11,15 @@ const {
 
 const router = express.Router();
 
+// auth routes
 router.post('/register',registerUser);
-router.put('/login',loginUser);
-router.post("/add", addUser);
-router.post("/get", getAllUsers);
-router.get("/get/:id", getSingleUserById);
-router.get("/update/:id", updateUser);
-router.get("/delete/:id", deleteUser);
+router.post('/login',loginUser);
+
+// // user routes
+// router.post("/add", addUser);
+// router.get("/get", getAllUsers);
+// router.get("/get/:id", getSingleUserById);
+// router.get("/update/:id", updateUser);
+// router.get("/delete/:id", deleteUser);
 
 module.exports = router;
