@@ -21,8 +21,9 @@ const middleware = (req, res, next) => {
     next();
   } catch (err) {
     return res
-      .status(500)
-      .json({ success: false, message: "Acess Denied. Token is not provided" });
+      .status(500) 
+      .json({ success: false,
+              message: "Acess Denied. Token is not provided" });
   }
   next();
 };
